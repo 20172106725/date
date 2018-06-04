@@ -57,6 +57,8 @@ int main()
 	CMydate omydate2(2018,6,9);
 	omydate1.display();
 	omydate2.display();
+	/*CDate ot1(2018,5,4);
+	ot1.display();*/
     return 0;
 }
 
