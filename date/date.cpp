@@ -48,14 +48,19 @@ public:
 		year = ty;
 		month = tm;
 		day = td;
+		cout << "派生类构造函数" << year << "年" << month << "月" << day << "日" << endl;
+	}
+	~CMydate()
+	{
+		cout << "派生类析构函数" << year << "年" << month << "月" << day << "日" << endl;
 	}
 };
 
 int main()
 {
 	CMydate omydate1(2018, 4, 8);
-	CMydate omydate2(2018,6,9);
 	omydate1.display();
+	CMydate omydate2(2018,6,9);
 	omydate2.display();
 	/*CDate ot1(2018,5,4);
 	ot1.display();*/
